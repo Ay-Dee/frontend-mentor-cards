@@ -1,83 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: hsl(217, 54%, 11%);
-    font-family: 'Outfit', sans-serif;
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
 }
 
-main{
-    position: relative;
-    height: 100vh;
-    height: 100dvh;
+main {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
 }
 
-.card{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    background: hsl(216, 50%, 16%);
-    padding: 20px;
-    border-radius: 20px;
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.card .image{
-    height: 280px;
-    margin-bottom: 16px;
+.card .image {
+  height: 280px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
-.card .image img{
-    height: 100%;
-    border-radius: 10px;
+.card .image .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 
-.card .desc h1{
-    font-size: 24px;
-    color: hsl(0, 0%, 100%);
+.card .image #eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.card .desc p{
-    font-size: 16px;
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
-    line-height: 24px;
+.card .image #equilibrium {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.5s ease;
 }
 
-.card .desc .stat{
+.card .image:hover #equilibrium {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card .image:hover .middle {
+  background: hsl(178, 100%, 50%, 0.5);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card .desc h1 {
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card .desc h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card .desc p {
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card .desc .stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.card .desc .stat p{
+  font-weight: 600;
+}
+
+.card .desc .stat .price {
+  display: flex;
+  justify-content: center;
+}
+
+.card .desc .stat .price p {
+  color: hsl(178, 100%, 50%);
+}
+
+.card .desc .stat .time {
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    margin-right: 4px;
 }
 
-.card .desc .stat .price{
-    display: flex;
+.card .desc hr {
+  margin: 10px 0;
+  border: 0.2px solid hsl(215, 32%, 27%);
 }
 
-.card .desc .stat .time{
-    display: flex;
+.card .artist {
+  display: flex;
+  align-items: center;
 }
 
-.card .desc .line{
-    margin: 10px 0;
-    border: 0.2px solid hsl(215, 32%, 27%);
+.card .artist span {
+  color: hsl(0, 0%, 100%);
 }
 
-.card .artist{
-    display: flex;
-    align-items: center;
+.card .artist span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.card .artist .artist-image{
-    width: 40px;
-    height: 40px;
+.card .artist .artist-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
 }
 
-.card .artist .artist-image img{
-    height: inherit;
+.card .artist .artist-image img {
+  height: inherit;
 }
