@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ main {
 
 .card .image {
   height: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   position: relative;
 }
 
@@ -74,6 +74,7 @@ main {
 .card .desc h1 {
   font-size: 24px;
   color: hsl(0, 0%, 100%);
+  margin: 0;
 }
 
 .card .desc h1:hover {
@@ -122,7 +123,7 @@ main {
 }
 
 .card .desc hr {
-  margin: 10px 0;
+  margin: 5px 0;
   border: 0.2px solid hsl(215, 32%, 27%);
 }
 
