@@ -84,6 +84,7 @@ main {
 }
 
 .card .desc p {
+  margin-top: 5px;
   font-size: 16px;
   color: hsl(215, 51%, 70%);
   font-weight: 300;
