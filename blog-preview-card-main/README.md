@@ -21,8 +21,8 @@ This is a solution to the [Blog preview card solution on Frontend Mentor](https:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-preview-card-xDpjrXX0oP)
-- Live Site URL: [Live preview](http://nft-preview-card-proj.vercel.app)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
+- Live Site URL: [Live preview](http://blog-profile-card.vercel.app)
 
 ## My process
 
