@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --soft-violet: hsl(277, 64%, 61%);
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --main-p: hsla(0, 0%, 100%, 0.75);
+    --stats-head: hsl(0, 0%, 100%);
+    --stats-desc: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--main-bg);
+    overflow: hidden;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 284px;
+    width: 720px;
+}
+
+.card .image{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 8px 8px 0;
+}
+
+.card .image .accent{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: hsl(277, 64%, 61%, 0.4);
+    border-radius: 0 8px 8px 0;
+}
+
+.card .content{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    background: var(--card-bg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 8px 0 0 8px;
+}
+
+.content .desc h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--stats-head);
+    margin-bottom: 15px;
+}
+
+.content .desc h1 span{
+    color: var(--soft-violet);
+}
+
+.content .desc p{
+    font-size: 11px;
+    color: var(--main-p);
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.content .stats{
+    display: flex;
+    align-items: flex-start;
+}
+
+.stats .state{
+    margin-right: 40px;
+}
+
+.stat h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--stats-head);
+    margin-bottom: 4px;
+}
+
+.stat p{
+    font-size: 8px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--stats-desc);
+    letter-spacing: 1px;
+}
+
+
+
+@media screen and(max-width: 720px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 284px;
+        height: 500px;
+    }
+}
